@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="Tlačítko 2" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FF000000"
+        android:text="Tlačítko 3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Textové pole 2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Textové pole 3"
+        android:textSize="40sp" />
+
+</LinearLayout>
