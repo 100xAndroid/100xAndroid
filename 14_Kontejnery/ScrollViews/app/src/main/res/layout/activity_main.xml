@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView scrollViewVerzeAndroidu
+         sirka a vyska max, bez okraju,
+         navazany na parent kontejner -->
+    <ScrollView
+        android:id="@+id/scrollViewVerzeAndroidu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- HorizontalScrollView
+             sirka a vyska max -->
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!-- tabulkovy formular TableLayout
+                 sirka a vyska max -->
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <!-- prvni radek tabulky, sirka 400, vyska 50dp -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <!-- textove pole s nadpisem, sirka max, vyska 50dp
+                         okraj 5dp, velikost textu 30sp
+                         roztazene pres 4 sloupce -->
+                    <TextView
+                        android:text="Verze Androidu"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="30sp"
+                        android:layout_margin="5dp"
+                        android:layout_span="4" />
+                </TableRow>
+
+                <!-- dalsi radek tabulky, 4 sloupce -->
+                <TableRow>
+                    <!-- ImageView - obrazek verze androidu z resources
+                         sirka a vyska 120dp, okaj 2dp, sedy ramecek 1dp -->
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/icecreamsandwich" />
+                    <!-- textove pole s verzi Androidu
+                         sirka max, vyska 50dp, okraj 5dp, velikost textu 30sp -->
+                    <TextView
+                        android:text="Android 4.0\nIce Cream Sandwich"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <!-- textove pole s verzi API
+                         sirka max, vyska 50dp, okraj 5dp, velikost textu 15sp -->
+                    <TextView
+                        android:text="API verze 14, 15"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <!-- textove pole s verzemi aktualizaci
+                         sirka max, vyska podle textu, okraj 5dp, velikost textu 15sp -->
+                    <TextView
+                        android:text="aktualizace:\n4.0.1, 4.0.2, 4.0.3 a 4.0.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/jellybean" />
+                    <TextView
+                        android:text="Android 4.1 - 4.3\nJelly Bean"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 16, 17, 18"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text="aktualizace:\n4.1: 4.1.1, 4.1.2\n4.2: 4.2.1, 4.2.2\n4.3: 4.3.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/kitkat" />
+                    <TextView
+                        android:text="Android 4.4\nKitkat"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 19"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text="aktualizace:\n4.4.1, 4.4.2, 4.4.3, 4.4.4, 4.4W, 4.4W.1 a 4.4W.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/lollipop" />
+                    <TextView
+                        android:text="Android 5.0, 5.1\nLollipop"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 21, 22"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text="aktualizace:\n5.0: 5.0.1, 5.0.2\n5.1: 5.1.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/marshmallow" />
+                    <TextView
+                        android:text="Android 6.0\nMarshmallow"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 23"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text="aktualizace:\n6.0.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/nougat" />
+                    <TextView
+                        android:text="Android 7.0, 7.1\nNougat"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 24, 25"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text="aktualizace:\n7.1.1 a 7.1.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/oreo" />
+                    <TextView
+                        android:text="Android 8.0, 8.1\nOreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 26, 27"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/pie" />
+                    <TextView
+                        android:text="Android 9.0\nPie"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 28"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+
+                <TableRow>
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="2dp"
+                        android:background="#dddddd"
+                        android:padding="1dp"
+                        app:srcCompat="@drawable/android10" />
+                    <TextView
+                        android:text="Android 10\nAndroid 10"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:text="API verze 29"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="15sp"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
