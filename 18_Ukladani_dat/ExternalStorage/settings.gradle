@@ -1,0 +1,2 @@
+rootProject.name = "Externí úložiště"
+include ':app'

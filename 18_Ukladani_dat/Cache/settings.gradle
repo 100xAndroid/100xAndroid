@@ -1,0 +1,2 @@
+rootProject.name = "Dočasné soubory"
+include ':app'
