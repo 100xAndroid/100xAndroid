@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     // nejjednodussi verze snackbar zpravy
     public void SnackbarDialog1 (View sender) {
         View view = findViewById(android.R.id.content);
-        Snackbar.make(findViewById(android.R.id.content), "Snackbar - test", Snackbar.LENGTH_LONG).show();
+        Snackbar.make(view, "Snackbar - test", Snackbar.LENGTH_LONG).show();
     }
 
     // snackbar zprava s tlacitkem
@@ -49,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         // nastaveni barvy textu
         TextView textView = (TextView) snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
         textView.setTextColor(Color.WHITE);
+
+        // nastaveni maximalniho poctu radku (standardne zobrazi max dva radky)
+        textView.setMaxLines(5);
 
         // zobrazeni snackbaru
         snackbar.show();
