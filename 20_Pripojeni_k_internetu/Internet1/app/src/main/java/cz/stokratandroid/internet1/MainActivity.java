@@ -25,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
     // nacte data ze serveru a zobrazi je v textovem poli
     public void nacistDataZeServeru(View view) {
+        // smazat predchozi informaci o pocasi
+        txtPredpoved.setText("");
+        // spustit nacitani dat o pocasi
         if (datovePripojeni() == true) {
             GetData getData = new GetData();
-            getData.execute();
+            getData.startAsync();
         }
     }
 
