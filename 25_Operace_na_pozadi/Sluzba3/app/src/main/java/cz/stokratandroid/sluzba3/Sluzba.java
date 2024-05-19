@@ -38,7 +38,7 @@ public class Sluzba extends Service {
         if (dataReceiver == null)
             dataReceiver = new DataReceiver();
         IntentFilter intentFilter = new IntentFilter("zpravaZAktivity");
-        registerReceiver(dataReceiver, intentFilter);
+        registerReceiver(dataReceiver, intentFilter, RECEIVER_NOT_EXPORTED);
 
         // vytvorit nove vlakno a sluzbu spustit
         vlakno=new Thread(new Runnable() {
