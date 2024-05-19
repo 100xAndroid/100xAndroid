@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (dataUpdateReceiver == null) dataUpdateReceiver = new DataUpdateReceiver();
         IntentFilter intentFilter = new IntentFilter("test");
-        registerReceiver(dataUpdateReceiver, intentFilter);
+        registerReceiver(dataReceiver, intentFilter, RECEIVER_NOT_EXPORTED;
     }
 
     @Override
