@@ -17,6 +17,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+
+// pro udalost kliknuti primo na znacku je nutne navic pouzit implements OnMarkerClickListener
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
