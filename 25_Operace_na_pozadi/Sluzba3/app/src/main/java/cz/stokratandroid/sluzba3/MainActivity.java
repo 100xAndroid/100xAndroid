@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         if (dataReceiver == null)
             dataReceiver = new DataReceiver();
         IntentFilter intentFilter = new IntentFilter("zpravaZeSluzby");
-        registerReceiver(dataReceiver, intentFilter);
+        registerReceiver(dataReceiver, intentFilter, RECEIVER_NOT_EXPORTED);
     }
 
     // udalost onPause, volana pri preruseni aktivity
