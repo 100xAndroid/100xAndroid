@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public static final int OPRAVNENI_REQUEST = 1;
+    public static final int OPRAVNENI_ZADOST = 1;
 
     // metoda volana kliknutim na tlacitko Test opravneni
     public void testOpravneni(View view) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Oprávnění nebylo uděleno.", Toast.LENGTH_LONG).show();
             } else {
                 // pozadame uzivatele o udeleni opravneni odesilat SMS
-                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, OPRAVNENI_REQUEST);
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, OPRAVNENI_ZADOST);
             }
         }
         else {
