@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // zpetne volani pri posunuti polozky seznamu
-    // toto vygenerujeme, netreba cele psat, viz https://www.youtube.com/watch?v=M1XEqqo6Ktg
     ItemTouchHelper.SimpleCallback itemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.START | ItemTouchHelper.END) {
         @Override
         public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
