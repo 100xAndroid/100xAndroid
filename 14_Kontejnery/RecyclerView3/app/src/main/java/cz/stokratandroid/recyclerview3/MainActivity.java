@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         // propojeni adapteru s kontejnerem RecyclerView
         recyclerView.setAdapter(adapter);
 
-        // zaregistrujeme zpetne volani pri posunuti polozky a propojime ho s recyclerView
+        // zaregistrovat zpetne volani pri posunuti polozky a propojit ho s recyclerView
         ItemTouchHelper itemTouchHepler = new ItemTouchHelper(itemTouchCallback);
         itemTouchHepler.attachToRecyclerView(recyclerView);
 
