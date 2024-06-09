@@ -21,7 +21,7 @@ public class PresouvaniHelper extends ItemTouchHelper.Callback {
 
     @Override
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-        contract.onViewMoved(viewHolder.getAdapterPosition(), target.getAdapterPosition());
+        contract.polozkaPresunuta(viewHolder.getAdapterPosition(), target.getAdapterPosition());
         return true;
     }
 
