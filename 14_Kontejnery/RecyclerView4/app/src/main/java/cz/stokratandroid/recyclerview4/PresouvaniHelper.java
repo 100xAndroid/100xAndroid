@@ -32,8 +32,8 @@ public class PresouvaniHelper extends ItemTouchHelper.Callback {
 
     // interface ktery slouzi k upozorneni adapteru, ze doslo ke zmene v umisteni polozek
     public interface PresunUkoncenUpozorneni {
-        void onViewMoved(int oldPosition, int newPosition);
+        void polozkaPresunuta(int oldPosition, int newPosition);
 
-        void onViewSwiped(int position);
+        void polozkaOdsunuta(int position);
     }
 }
