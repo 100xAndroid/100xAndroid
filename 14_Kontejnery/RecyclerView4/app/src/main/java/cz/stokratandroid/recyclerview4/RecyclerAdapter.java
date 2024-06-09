@@ -54,7 +54,7 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> implements
     }
 
     @Override
-    public void onViewMoved(int oldPosition, int newPosition) {
+    public void polozkaPresunuta(int oldPosition, int newPosition) {
         String presouvanaPolozka = androidVerzeData.get(oldPosition);
         androidVerzeData.remove(oldPosition);
         androidVerzeData.add(newPosition, presouvanaPolozka);
@@ -63,7 +63,7 @@ class RecyclerAdapter extends RecyclerView.Adapter<RecyclerHolder> implements
     }
 
     @Override
-    public void onViewSwiped(int position) {
+    public void polozkaOdsunuta(int position) {
         // androidVerzeData.remove(position);
 
         notifyItemRemoved(position);
