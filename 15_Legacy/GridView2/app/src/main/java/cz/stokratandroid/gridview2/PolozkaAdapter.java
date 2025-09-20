@@ -51,7 +51,8 @@ public class PolozkaAdapter  extends ArrayAdapter<String> {
         txtName.setText(strVersion[1]);
         txtVersion.setText(strVersion[0]);
 
-        // upravene Viev odeslat jako navratovou hodnotu
+        // upravene View odeslat jako navratovou hodnotu
         return convertView;
     }
 }
+
